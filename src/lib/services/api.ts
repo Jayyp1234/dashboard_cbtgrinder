@@ -27,7 +27,7 @@ export interface LoginResponse {
 
 export const api = createApi({
   reducerPath: "api",
-  baseQuery: fetchBaseQuery({ baseUrl: "https://cbtgrinder.com/api/admin" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://cbtgrinder.com/api/dashboard" }),
   endpoints: (builder) => ({
     loginUser: builder.mutation<LoginResponse, FormData>({
       query: (formData) => ({

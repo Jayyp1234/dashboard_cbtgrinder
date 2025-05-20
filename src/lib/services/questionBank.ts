@@ -40,7 +40,7 @@ export const questionBank = createApi({
   reducerPath: 'questionBankApi',
   tagTypes: ['Question'],
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://cbtgrinder.com/api/admin/',
+    baseUrl: 'https://cbtgrinder.com/api/dashboard/',
     prepareHeaders: (headers) => {
       const token = localStorage.getItem('token');
       if (token) {
